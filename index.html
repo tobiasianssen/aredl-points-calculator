@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREDL Points Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div class="hero-header">
+                <div>
+                    <span class="eyebrow">AREDL points Calculator</span>
+                    <h1>Points from completed levels</h1>
+                </div>
+                <div class="hero-stats-group">
+                    <div class="hero-stats">
+                        <span>Total points</span>
+                        <strong id="totalPoints">0</strong>
+                    </div>
+                    <div class="hero-stats">
+                        <span>Total extremes completed</span>
+                        <strong id="totalCount">0</strong>
+                    </div>
+                    <div class="hero-action">
+                        <button id="clearBtn" class="secondary-btn" type="button">Remove all</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="hero-copy">Type a level name and press Enter to add it.</p>
+
+            <div class="input-row">
+                <input id="levelInput" type="text" placeholder="Enter level name..." autocomplete="off" />
+                <button id="addBtn">Add level</button>
+            </div>
+
+            <div id="suggestions" class="suggestions" hidden></div>
+            <div id="statusMessage" class="status-message"></div>
+        </section>
+
+        <section class="level-list" id="levelList"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
